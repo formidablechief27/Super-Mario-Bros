@@ -73,9 +73,9 @@ class Editor:
 			group = [self.canvas_objects, self.background])
 
 		# music
-		# self.editor_music = pygame.mixer.Sound('C:/Users/Dhrumil/MPR/audio/Explorer.ogg')
-		# self.editor_music.set_volume(0.4)
-		# self.editor_music.play(loops = -1)
+		self.editor_music = pygame.mixer.Sound('C:/Users/Dhrumil/MPR/audio/Explorer.ogg')
+		self.editor_music.set_volume(0.4)
+		self.editor_music.play(loops = -1)
 
 	# support
 	def get_current_cell(self, obj = None):
@@ -215,7 +215,7 @@ class Editor:
 				sys.exit()
 			if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
 				self.switch(self.create_grid())
-				#self.editor_music.stop()
+				self.editor_music.stop()
 			
 			self.pan_input(event)
 			self.selection_hotkeys(event)

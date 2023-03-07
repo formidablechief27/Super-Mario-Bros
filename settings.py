@@ -1,7 +1,7 @@
 # general setup
 TILE_SIZE = 64
 WINDOW_WIDTH = 1280
-WINDOW_HEIGHT = 720
+WINDOW_HEIGHT = 660
 ANIMATION_SPEED = 8
 
 # editor graphics 
